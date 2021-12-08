@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.logomob{
+  display: none;
+}
+label.logo{
+  color: white;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 60px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  color: rgb(245, 166, 35);
+  transition: .5s;
+}
+
+#feedback:hover{
+  color: white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.textdiv{
+  font-size: 30px;
+  position: absolute;
+  top:40vh;
+  left: 54px;
+  color:white;
+  line-height: 68px;
+}
+@media (max-width: 952px){
+  .checkbtn{
+    display: block;
+  }
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  .logomob{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 858px){
+
+.textdiv{
+  font-size: 20px;
+  position: absolute;
+  top: 35vh;
+  line-height: 50px;
+}
+
+  .checkbtn{
+    display: block;
+  }
+  .logomob{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1c2125;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 5000;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 25px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: rgb(245, 166, 35);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url('https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80') no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
