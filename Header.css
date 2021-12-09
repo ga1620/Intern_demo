@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family:Metropolis;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
   background: transparent;
@@ -20,11 +20,10 @@ nav{
 }
 label.logo{
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 80px;
-  padding: 0 60px;
+  padding: 0 65px;
   font-weight:700;
-  font-style:italic;
 }
 
 nav ul{
@@ -65,12 +64,13 @@ a.active,a:hover{
 }
 
 .textdiv{
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   top:40vh;
   left: 54px;
+  font-weight:550;
   color:white;
-  line-height: 68px;
+  line-height: 60px;
 }
 @media (max-width: 952px){
   .checkbtn{
@@ -93,10 +93,10 @@ a.active,a:hover{
 @media (max-width: 858px){
 
 .textdiv{
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
   top: 35vh;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
   left: 0%;
 }
